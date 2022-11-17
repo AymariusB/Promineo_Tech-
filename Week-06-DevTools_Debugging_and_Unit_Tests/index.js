@@ -15,12 +15,13 @@ class Card {
 class Deck {
     constructor() {
       this.deck = [];
-      for (let suit in suits) {
-        for (let value in values) {
-          this.deck.push(`${values[value]} of ${suits[suit]}`);
+      for (let suit of suits) {
+        for (let value of values) {
+//         this.deck.push(`${values[value]} of ${suits[suit]}`);
+this.deck.push({suit,value});
         }
-      }
-    }
+      }console.log(this.deck[0].value);
+    } 
   
     shuffle(){
       const { deck } = this;
@@ -59,18 +60,20 @@ console.log(`---------🔥💣💣 LET THE WAR BEGIN 💣💣🔥 ---------
 `);
 
 for (let i = 0; i < 26; i++){
-    const player1Card = player1.playerHand[i];
-    const player2Card = player2.playerHand[i];
-    const player1CardValue = player1Card.split(" ")[0];
-    const player2CardValue = player2Card.split(" ")[0];
+    const player1Card = player1.playerHand[i].value;
+    const player2Card = player2.playerHand[i].value;
+   
+   // const player1CardValue = player1Card.split(" ")[0];
+ // const player2CardValue = player2Card.split(" ")[0];
 
     console.log(`----- ROUND 🎲 ${i + 1} 🎲 -----
     `);
-    if(player1CardValue > player2CardValue){
+    if(player1Card > player2Card){
         player1.playerScore++;
         console.log(`Player 1 won with ${player1Card} over ${player2Card}
         `);
-    } else if (player1CardValue < player2CardValue){
+        
+    } else if (player1Card < player2Card){
         player2.playerScore++;
         console.log(`Player 2 won with ${player2Card} over ${player1Card}
         `);
