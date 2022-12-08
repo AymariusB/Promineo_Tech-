@@ -1,0 +1,79 @@
+
+
+/*THIS CSS FILE COULD NOT BE APPLIED TO MY LAST HTML PROJECT AS INSTRUCTED IN THIS WEEK ASSIGNMENT
+SO I HAVE CREATED A NEW CSS FILE WHICH I GENERICALLY NAMED STYLES.CSS AND APPLIED IT TO LAST WEEK PROJECT
+WITH THE INTENTION OF SHOWING IT EFFECT ON THE SAID PROJECT*/
+
+/* Style the table premise in a basic manner*/
+  table {
+    display: table;
+    border-collapse: collapse;
+  }
+
+  /* style the table with each element compartimentalized in group of information*/
+  table {
+    border-collapse: separate;
+    border-spacing: 10px;
+  }
+
+  /*style the table rows*/
+  
+  tr {
+    display: table-row;
+  }
+  tr:hover {
+    /* styles for the table rows when the user hovers over them */
+    background-color: #ddd;
+    cursor: pointer;
+  }
+  
+  th, td {
+    display: table-cell;
+    border: 1px solid rgb(81, 77, 77);
+    padding: 5px;
+  }
+  /* Style the body element with a background color and a font family */
+body {
+    background-color: #f7ededfd;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the header element with a dark background color and center the text */
+ 
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    font-size: 18px;
+}
+  
+  /* Style the nav element with a background color and some basic styling for the links */
+  nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+  }
+  nav a:hover {
+    background-color: #444;
+  }
+  
+  /* Style the main content area with a white background color and some basic padding */
+  main {
+    background-color: white;
+    padding: 20px;
+  }
+  
+  /* Style the footer with a dark background color and center the text */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
